@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_Activity">
+
+    <ImageView
+        android:id="@+id/notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/saeed"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"/>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/edit_one_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="search"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/notifications"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:background="@drawable/notifications"
+        android:layout_margin="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardBackgroundColor="#C6B7A1"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_one_search"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our offer is up to 50%"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:layout_marginTop="40dp"
+            android:textSize="25dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/klothes3"
+            android:layout_marginStart="260dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Button1_All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="All"
+        android:layout_marginStart="20dp"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/card"/>
+    <Button
+        android:id="@+id/Button2_chair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CAC2C2"
+        android:text="chair"
+        app:layout_constraintStart_toEndOf="@id/Button1_All"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/card"/>
+    <Button
+        android:id="@+id/Button3_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CAC2C2"
+        android:text="chair"
+        app:layout_constraintStart_toEndOf="@id/Button2_chair"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/card"/>
+    <Button
+        android:id="@+id/Button4_lamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CAC2C2"
+        android:text=" lamp"
+        app:layout_constraintStart_toEndOf="@id/Button3_table"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/card"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylicleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Button1_All" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/Home_Activity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/baseline_home_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/Home_cart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/baseline_add_shopping_cart_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/Home_Activity" />
+
+            <ImageView
+                android:id="@+id/Home_List"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="70dp"
+                android:src="@drawable/baseline_list_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/Home_profile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/Home_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/baseline_person_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

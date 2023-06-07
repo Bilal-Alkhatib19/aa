@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Confirm_login">
+      <EditText
+          android:id="@+id/confirm_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="30dp"
+          android:background="@drawable/edit"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:hint="Enter The Name"/>
+      <EditText
+          android:id="@+id/confirm_password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="30dp"
+          android:background="@drawable/edit"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:hint="Enter The password"/>
+      <EditText
+          android:id="@+id/confirm_Email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="30dp"
+          android:background="@drawable/edit"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:hint="Enter The Email"/>
+      <EditText
+          android:id="@+id/confirm_phonNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="30dp"
+          android:background="@drawable/edit"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:hint="Enter The phonnumber"/>
+
+    <Button
+        android:id="@+id/button_Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit"
+        android:layout_gravity="center"
+        android:text="Enter"/>
+
+</LinearLayout>
